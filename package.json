@@ -1,6 +1,6 @@
 {
   "name": "ractive-dropdown",
-  "version": "0.4.1",
+  "version": "0.1.0",
   "description": "A dropdown component for ractive",
   "main": "src/ractive-dropdown.js",
   "repository": "https://github.com/jondum/ractive-dropdown",
