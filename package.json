@@ -1,0 +1,22 @@
+{
+  "name": "ractive-dropdown",
+  "version": "0.4.1",
+  "description": "A dropdown component for ractive",
+  "main": "src/ractive-dropdown.js",
+  "repository": "https://github.com/jondum/ractive-dropdown",
+  "keywords": [
+    "ractive",
+    "component",
+    "dropdown"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "grunt": "^1.0.1",
+    "ractive-loader": "^0.5.6",
+    "style-loader": "^0.13.1",
+    "stylus-loader": "^2.1.1",
+    "webpack": "^1.13.1"
+  }
+}

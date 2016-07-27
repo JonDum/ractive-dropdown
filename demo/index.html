@@ -1,0 +1,104 @@
+
+
+<html>
+    <head>
+        <title>ractive-dropdown Demo</title>
+
+        <meta charset="utf-8">
+
+        <!--<script src='ractive.js'></script>-->
+        <script src='http://cdn.ractivejs.org/edge/ractive.min.js'></script>
+        <link rel='stylesheet' href='css/styles.css'/>
+
+    </head>
+
+    <body>
+
+
+        <demo></demo>
+
+        <script src='../ractive-dropdown.min.js'></script>
+
+        <script id='template' type='text/ractive'>
+
+        <h1>Ractive dropdown</h1>
+
+        <section>
+            <h2>Basic usage</h2>
+
+            <p>With no styles, <code>ractive-dropdon</code> is a simple way to hide/show content on click</p>
+            <pre>
+            <code>
+
+    &lt;dropdown&gt;
+        Click me
+        \{{#partial dropdown}}
+            &lt;img src='http://lorempixel.com/320/280/animals/'/&gt;
+        \{{/partial}}
+    &lt;/dropdown&gt;
+
+            </code>
+            </pre>
+        </section>
+
+        Result:
+
+        <dropdown style='margin-top: 1em'>
+            Click me
+            {{#partial dropdown}}
+                <img src='http://lorempixel.com/320/280/animals/'/>
+            {{/partial}}
+        </dropdown>
+
+        <section>
+
+            <h2>Styling</h2>
+
+            <p><code>ractive-dropdown</code> provides minimal styling, so it
+            can easily be themed as needed. <code>class</code> and
+            <code>style</code> attributes forward to the
+            <code>.ractive-dropdown</code> element which make for easy customizations as needed.</p>
+
+        <dropdown class='styled-dropdown'>
+            <button>Click me</button>
+            {{#partial dropdown}}
+                Hi I am in a dropdown
+            {{/partial}}
+        </dropdown>
+
+
+        </section>
+
+        </script>
+
+        <script>
+
+            var main = new Ractive({
+
+                el: 'demo',
+
+                template: '#template',
+
+                data: {
+
+
+                },
+
+                components: {
+                    dropdown:  RactiveDropdown // don't do globals, kids
+                    //dropdown: require('ractive-dropdown') // use a buildsystem
+                },
+
+                oncomplete: function() {
+                    //debug stuff. Don't do this in production, kids
+                    window.s = this.findComponent('dropdown');
+                }
+
+            })
+
+        </script>
+
+    </body>
+
+</html>
+
