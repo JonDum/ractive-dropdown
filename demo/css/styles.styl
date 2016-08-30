@@ -2,6 +2,7 @@
 body
     background #ebedf1
     font-family 'Lucida Grande', 'Heveltica Nueue', 'Helvetica', 'sans-serif'
+    padding-bottom 10em
 
 demo
     padding 3em
@@ -32,7 +33,7 @@ section
     background #fff
 
 
-.button, button
+button.styled
     display inline-block
     cursor pointer
     padding 0.6em 2.4em
@@ -57,19 +58,39 @@ section
         position relative
         top 1px
 
-    &.disabled
-        cursor not-allowed
-        background #f0f0f0
-        color #ccc
-        border none
-        &:hover, &:active
-            background #f0f0f0
 
-
-
-.styled-dropdown .dropdown
+.styled.dropdown
     padding 1em
     background #fff
     box-shadow  0 3px 9px fade-out(#000, 0.8)
     border-radius 3px
+
+.dark.dropdown, button.dark
+    padding 1em
+    background #000
+    color #eee
+    border 1px solid #333
+    box-shadow  0 3px 9px fade-out(#000, 0.8)
+    border-radius 3px
+
+.dark.dropdown
+    transition transform 0.3s ease, opacity 0.3s ease
+    transform translate(0, 1em)
+    opacity 0
+
+    li:not(:only-child):not(:first-child)
+        transition margin-top 0.3s ease
+        margin-top 1em
+
+    &.open
+        opacity 1
+        transform translate(0, 0)
+        li
+            margin-top 0 !important
+
+button.dark
+    text-shadow none
+    &:hover, &:active
+        background #2a2a2a
+        color #fff
 
