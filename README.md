@@ -1,6 +1,10 @@
 # ractive-dropdown
 
-A ractive component to disable child elements in a dropdown on click.
+A ractive component to disable child elements in a dropdown on click or hover.
+
+If you are looking for a `<select>`-like component check out [`ractive-select`](https://github.com/JonDum/ractive-dropdown).
+
+If you are looking for the original `ractive-dropdown` refer to [alexserver/ractive-dropdown](https://github.com/alexserver/ractive-dropdown).
 
 ### Demo
 
