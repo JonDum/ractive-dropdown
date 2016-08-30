@@ -69,6 +69,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 		data: function() {
 			return {
+	            mode: 'click',
 				open: false,
 			}
 		},
@@ -195,10 +196,10 @@ return /******/ (function(modules) { // webpackBootstrap
 				top = bounds.bottom; // default to below
 			
 			if(left + dropdownBounds.width > win.innerWidth)
-				left -= dropdownBounds.width - 5;
+				left -= dropdownBounds.width - bounds.width - 5;
 
 			if(top + dropdownBounds.height > win.innerHeight)
-				top -= dropdownBounds.height - 5;
+				top -= dropdownBounds.height - bounds.height - 5;
 
 			if(!open)
 				left = '-9999';
@@ -624,7 +625,7 @@ return /******/ (function(modules) { // webpackBootstrap
   \***************************/
 /***/ function(module, exports) {
 
-	module.exports={"v":3,"t":[{"t":7,"e":"div","a":{"class":["ractive-dropdown ",{"t":2,"r":"class"}]},"m":[{"t":4,"f":["style='",{"t":2,"r":"style"},"'"],"n":50,"r":"style"}],"v":{"click":"click","hover":"hover"},"f":[{"t":16}]}]};
+	module.exports={"v":3,"t":[{"t":7,"e":"div","a":{"class":["ractive-dropdown ",{"t":2,"r":".class"}]},"m":[{"t":4,"f":["style='",{"t":2,"r":".style"},"'"],"n":50,"r":".style"}],"v":{"click":"click","hover":"hover"},"f":[{"t":16}]}]};
 
 /***/ },
 /* 6 */
