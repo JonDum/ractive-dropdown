@@ -137,10 +137,10 @@ module.exports = Ractive.extend({
 			top = bounds.bottom; // default to below
 		
 		if(left + dropdownBounds.width > win.innerWidth)
-			left -= dropdownBounds.width - 5;
+			left -= dropdownBounds.width - bounds.width - 5;
 
 		if(top + dropdownBounds.height > win.innerHeight)
-			top -= dropdownBounds.height - 5;
+			top -= dropdownBounds.height - bounds.height - 5;
 
 		if(!open)
 			left = '-9999';
