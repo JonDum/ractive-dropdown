@@ -268,17 +268,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(/*! !./../~/css-loader!./../~/stylus-loader!./styles.styl */ 2);
+	var content = __webpack_require__(/*! !./../../../../Applications/lib/~/css-loader!./../~/stylus-loader!./styles.styl */ 2);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(/*! ./../~/style-loader/addStyles.js */ 4)(content, {});
+	var update = __webpack_require__(/*! ./../../../../Applications/lib/~/style-loader/addStyles.js */ 4)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./styles.styl", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./styles.styl");
+			module.hot.accept("!!./../../../../Applications/lib/node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./styles.styl", function() {
+				var newContent = require("!!./../../../../Applications/lib/node_modules/css-loader/index.js!./../node_modules/stylus-loader/index.js!./styles.styl");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -289,12 +289,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 2 */
-/*!**********************************************************!*\
-  !*** ./~/css-loader!./~/stylus-loader!./src/styles.styl ***!
-  \**********************************************************/
+/*!*******************************************************************************************!*\
+  !*** /Users/JD/Dropbox/Applications/lib/~/css-loader!./~/stylus-loader!./src/styles.styl ***!
+  \*******************************************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(/*! ./../~/css-loader/lib/css-base.js */ 3)();
+	exports = module.exports = __webpack_require__(/*! ./../../../../Applications/lib/~/css-loader/lib/css-base.js */ 3)();
 	// imports
 
 
@@ -306,9 +306,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 3 */
-/*!**************************************!*\
-  !*** ./~/css-loader/lib/css-base.js ***!
-  \**************************************/
+/*!***********************************************************************!*\
+  !*** /Users/JD/Dropbox/Applications/lib/~/css-loader/lib/css-base.js ***!
+  \***********************************************************************/
 /***/ function(module, exports) {
 
 	/*
@@ -365,9 +365,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 4 */
-/*!*************************************!*\
-  !*** ./~/style-loader/addStyles.js ***!
-  \*************************************/
+/*!**********************************************************************!*\
+  !*** /Users/JD/Dropbox/Applications/lib/~/style-loader/addStyles.js ***!
+  \**********************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -625,13 +625,13 @@ return /******/ (function(modules) { // webpackBootstrap
   \***************************/
 /***/ function(module, exports) {
 
-	module.exports={"v":4,"t":[{"t":7,"e":"div","m":[{"n":"class","f":["ractive-dropdown ",{"t":2,"r":".class"}],"t":13},{"t":4,"f":[{"n":"style","f":[{"t":2,"r":".style"}],"t":13}],"n":50,"r":".style"},{"n":"click","f":"click","t":70},{"n":"hover","f":"hover","t":70}],"f":[{"t":16}]}]};
+	module.exports={"v":4,"t":[{"t":7,"e":"div","m":[{"n":"class","f":["ractive-dropdown ",{"t":2,"r":".class"}],"t":13},{"t":4,"f":[{"n":"style","f":[{"t":2,"r":".style"}],"t":13}],"n":50,"r":".style"},{"n":"class-open","f":[{"t":2,"r":".open"}],"t":13},{"n":"click","f":"click","t":70},{"n":"hover","f":"hover","t":70}],"f":[{"t":16}]}]};
 
 /***/ },
 /* 6 */
-/*!**************************************************************************************************!*\
-  !*** /Users/JD/Dropbox/Applications/lib/~/ractive-events-hover/dist/ractive-events-hover.umd.js ***!
-  \**************************************************************************************************/
+/*!*****************************************************************!*\
+  !*** ./~/ractive-events-hover/dist/ractive-events-hover.umd.js ***!
+  \*****************************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
 	(function (global, factory) {
