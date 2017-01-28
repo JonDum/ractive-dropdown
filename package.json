@@ -1,6 +1,6 @@
 {
   "name": "ractive-dropdown",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A component for ractive that can display any generic content in a dropdown on click or hover.",
   "main": "src/ractive-dropdown.js",
   "repository": "https://github.com/jondum/ractive-dropdown",
