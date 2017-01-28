@@ -17,7 +17,7 @@ module.exports = {
 	module: {
 		loaders: [
 			{test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader'},
-			{test: /\.html/, loader: 'ractive-loader'}
+			{test: /\.html$/, loader: 'ractive-loader'}
 		],
 	},
 }
